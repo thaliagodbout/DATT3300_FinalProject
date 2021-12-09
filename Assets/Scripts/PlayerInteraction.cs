@@ -21,7 +21,7 @@ public class PlayerInteraction : MonoBehaviour
             npcText.SetActive(true);
 
             if(Input.GetKeyDown(KeyCode.E)) {
-                print("Congratulations!");
+                FindObjectOfType<DialogueTrigger>().TriggerDialogue();
             }
         } else {
             // Deactivate text
