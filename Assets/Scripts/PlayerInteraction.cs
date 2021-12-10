@@ -7,7 +7,8 @@ public class PlayerInteraction : MonoBehaviour
     private GameObject triggeringNPC;
     private bool triggering;
 
-    public GameObject npcText;
+    public GameObject promptText;
+    private DialogueTrigger otherDialogueTrigger;
 
     void Start() {
 
@@ -17,22 +18,23 @@ public class PlayerInteraction : MonoBehaviour
         if (triggering) {
             // print("Player is triggering with " + triggeringNPC);
 
-            // Activate text
-            npcText.SetActive(true);
+            // Activate prompt text
+            promptText.SetActive(true);
 
             if(Input.GetKeyDown(KeyCode.E)) {
-                FindObjectOfType<DialogueTrigger>().TriggerDialogue();
+                otherDialogueTrigger.TriggerDialogue();
             }
         } else {
             // Deactivate text
-            npcText.SetActive(false);
+            promptText.SetActive(false);
         }
     }
 
     void OnTriggerEnter(Collider other) {
         if (other.tag == "NPC") {
-            triggering = true;
             triggeringNPC = other.gameObject;
+            otherDialogueTrigger = triggeringNPC.GetComponent("DialogueTrigger") as DialogueTrigger;
+            triggering = true;
         }
     }
 
@@ -40,6 +42,7 @@ public class PlayerInteraction : MonoBehaviour
         if (other.tag == "NPC") {
             triggering = false;
             triggeringNPC = null;
+            otherDialogueTrigger.notInDialogue();
         }
     }
 }
