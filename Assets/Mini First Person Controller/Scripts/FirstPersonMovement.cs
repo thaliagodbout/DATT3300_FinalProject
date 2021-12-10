@@ -51,5 +51,6 @@ public class FirstPersonMovement : MonoBehaviour
  
     public void disableControls() {
         playerControlsEnabled = false;
+        rigidbody.velocity = new Vector3(0, 0, 0);
     }
 }

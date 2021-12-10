@@ -19,4 +19,8 @@ public class DialogueTrigger : MonoBehaviour
     public void notInDialogue() {
         inDialogue = false;
     }
+
+    public bool isInDialogue() {
+        return inDialogue;
+    }
 }
