@@ -31,6 +31,7 @@ public class GroundCheck : MonoBehaviour
 
         // Update isGrounded.
         isGrounded = isGroundedNow;
+        Debug.Log("Grounded: " + isGrounded);
     }
 
     void OnDrawGizmosSelected()
