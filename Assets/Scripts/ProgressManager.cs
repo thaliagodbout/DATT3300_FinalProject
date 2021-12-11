@@ -10,11 +10,13 @@ public static class ProgressManager
     public static string inventoryItem;
     public static bool[] puzzleStatuses = {false, false, false};
 
+    public static Vector3 overworldSpawnPoint = new Vector3(354, 7, 191);
+    public static bool isSpawnInOverworld = false;
+
     public static void solveAnother() {
         if (numSolvedPuzzles < totalPuzzles) {
             numSolvedPuzzles = numSolvedPuzzles + 1;
             Debug.Log("Solved puzzle count: " + numSolvedPuzzles);
-
         } else {
             Debug.Log("Oops: max puzzles exceeded");
         }

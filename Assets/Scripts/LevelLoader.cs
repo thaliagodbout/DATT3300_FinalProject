@@ -19,6 +19,7 @@ public class LevelLoader : MonoBehaviour
         if (SceneManager.GetActiveScene().buildIndex == 0) {
             StartCoroutine(LoadLevel(1));
         } else {
+            ProgressManager.isSpawnInOverworld = true;
             StartCoroutine(LoadLevel(0));
         }
     }

@@ -21,6 +21,11 @@ public class FirstPersonMovement : MonoBehaviour
     {
         // Get the rigidbody on this.
         rigidbody = GetComponent<Rigidbody>();
+        
+        if (ProgressManager.isSpawnInOverworld) { // Set spawnpoint in overworld
+            gameObject.transform.position = ProgressManager.overworldSpawnPoint;
+            ProgressManager.isSpawnInOverworld = false;
+        }
     }
 
     void FixedUpdate()

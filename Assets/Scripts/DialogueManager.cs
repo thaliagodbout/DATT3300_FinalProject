@@ -9,6 +9,9 @@ public class DialogueManager : MonoBehaviour
     public TMP_Text nameText;
     public TMP_Text dialogueText;
 
+    public TMP_Text scoreText;
+
+
     public Animator dialogueBoxAnimator;
 
     private Queue<string> sentences;
@@ -19,6 +22,10 @@ public class DialogueManager : MonoBehaviour
     void Start()
     {
         sentences = new Queue<string>();
+    }
+
+    void Update() {
+        scoreText.text = ProgressManager.numSolvedPuzzles.ToString() + "/" + ProgressManager.totalPuzzles.ToString();
     }
 
     public void StartDialogue(Dialogue dialogue) {
@@ -81,7 +88,7 @@ public class DialogueManager : MonoBehaviour
         } else if (playerInteraction.getTriggeringObj().tag == "PickUpItem") {
             playerMovementController.enableControls();
             dialogueBoxAnimator.SetBool("IsOpen", false);
-            
+
         } else {
             playerMovementController.enableControls();
             dialogueBoxAnimator.SetBool("IsOpen", false);
