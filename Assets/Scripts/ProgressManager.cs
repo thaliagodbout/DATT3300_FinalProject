@@ -7,6 +7,8 @@ public static class ProgressManager
 {
     public static int numSolvedPuzzles = 0;
     public static int totalPuzzles = 3;
+    public static string inventoryItem;
+    public static bool[] puzzleStatuses = {false, false, false};
 
     public static void solveAnother() {
         if (numSolvedPuzzles < totalPuzzles) {

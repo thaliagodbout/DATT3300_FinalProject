@@ -4,10 +4,11 @@ using UnityEngine;
 
 public class PuzzleObject : MonoBehaviour
 {
-    static bool solved = false;
+    private bool solved = false;
     public string requiredKey;
 
     public GameObject solvedPuzzle;
+    public int ID;
 
     // Start is called before the first frame update
     void Start()
@@ -18,14 +19,17 @@ public class PuzzleObject : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        solved = ProgressManager.puzzleStatuses[ID];
+        
         if (solved) {
             GetComponent<MeshRenderer>().enabled = false;
+            GetComponent<Collider>().enabled = false;
             solvedPuzzle.SetActive(true);
         }
     }
 
     public bool isSolved() {
-        return solved;
+        return ProgressManager.puzzleStatuses[ID];
     }
 
     public string getRequiredKey() {
@@ -33,7 +37,7 @@ public class PuzzleObject : MonoBehaviour
     }
 
     public void solve() {
-        solved = true;
         ProgressManager.solveAnother();
+        ProgressManager.puzzleStatuses[ID] = true;
     }
 }

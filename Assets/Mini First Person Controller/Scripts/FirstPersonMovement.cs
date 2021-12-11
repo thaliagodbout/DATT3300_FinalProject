@@ -41,16 +41,20 @@ public class FirstPersonMovement : MonoBehaviour
 
             // Apply movement.
             rigidbody.velocity = transform.rotation * new Vector3(targetVelocity.x, rigidbody.velocity.y, targetVelocity.y);
+
         }
         
     }
 
     public void enableControls() {
         playerControlsEnabled = true;
+        rigidbody.useGravity = true;
+
     }
  
     public void disableControls() {
         playerControlsEnabled = false;
         rigidbody.velocity = new Vector3(0, 0, 0);
+        rigidbody.useGravity = false;
     }
 }

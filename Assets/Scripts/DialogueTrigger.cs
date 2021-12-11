@@ -7,6 +7,9 @@ public class DialogueTrigger : MonoBehaviour
     public Dialogue dialogue;
     private bool inDialogue = false;
 
+    public bool getKeyAfterDialogue = false;
+    public string key;
+
     public void TriggerDialogue() {
         if (!inDialogue) {
             FindObjectOfType<DialogueManager>().StartDialogue(dialogue);
@@ -18,6 +21,9 @@ public class DialogueTrigger : MonoBehaviour
 
     public void notInDialogue() {
         inDialogue = false;
+        if (getKeyAfterDialogue) {
+            ProgressManager.inventoryItem = key;
+        }
     }
 
     public bool isInDialogue() {

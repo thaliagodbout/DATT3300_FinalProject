@@ -8,6 +8,7 @@ TagManager:
   - PuzzleObject
   - Portal
   - PickUpItem
+  - Benign
   layers:
   - Default
   - TransparentFX

@@ -11,7 +11,7 @@ public class PlayerInteraction : MonoBehaviour
     private DialogueTrigger otherDialogueTrigger;
     private PuzzleDialogueTrigger puzzleDialogueTrigger;
 
-    private static string inventoryItem;
+    // private static string inventoryItem;
 
     void Start() {
 
@@ -26,13 +26,12 @@ public class PlayerInteraction : MonoBehaviour
             } else if ((triggeringObj.tag == "PuzzleObject") && (puzzleDialogueTrigger.isInDialogue())) {
                 promptText.GetComponent<Animator>().SetBool("IsOpen", false);
                 // TODO: add custom text for puzzle prompt dialogue!
+
             } else if (triggeringObj.tag == "PickUpItem") {
                 promptText.GetComponent<Animator>().SetBool("IsOpen", true);
 
             } else {
-                // if (triggeringObj.tag != "PuzzleObject") {
                 promptText.GetComponent<Animator>().SetBool("IsOpen", true);
-                // }
             }
 
             // If player gives input, start interaction dialogue
@@ -76,6 +75,10 @@ public class PlayerInteraction : MonoBehaviour
             triggeringObj = other.gameObject;
             otherDialogueTrigger = triggeringObj.GetComponent("DialogueTrigger") as DialogueTrigger;
             triggering = true;
+        } else if (other.tag == "Benign") {
+            triggeringObj = other.gameObject;
+            otherDialogueTrigger = triggeringObj.GetComponent("DialogueTrigger") as DialogueTrigger;
+            triggering = true;
         }
     }
 
@@ -101,6 +104,11 @@ public class PlayerInteraction : MonoBehaviour
             triggering = false;
             triggeringObj = null;
             otherDialogueTrigger.notInDialogue();
+
+        } else if (other.tag == "Benign") {
+            triggering = false;
+            triggeringObj = null;
+            otherDialogueTrigger.notInDialogue();
         }
     }
 
@@ -111,10 +119,10 @@ public class PlayerInteraction : MonoBehaviour
     private void puzzleObjectInteraction() {
         PuzzleObject puzzleObject = triggeringObj.GetComponent("PuzzleObject") as PuzzleObject;
 
-        if (puzzleObject.getRequiredKey() == inventoryItem) { // Can be solved
+        if (puzzleObject.getRequiredKey() == ProgressManager.inventoryItem) { // Can be solved
             puzzleDialogueTrigger.TriggerSolvableDialogue();
 
-            inventoryItem = "";
+            ProgressManager.inventoryItem = "";
             puzzleObject.solve();
 
         } else if (puzzleObject.isSolved()) { // Already solved
@@ -124,14 +132,13 @@ public class PlayerInteraction : MonoBehaviour
             puzzleDialogueTrigger.TriggerInitialDialogue();
 
         }
-
     }
 
     private void pickUpItemInteraction() {
         if (triggeringObj.GetComponent("ItemPickup") != null) {
             ItemPickup item = triggeringObj.GetComponent("ItemPickup") as ItemPickup;
 
-            inventoryItem = item.key;
+            ProgressManager.inventoryItem = item.key;
             item.pickUp();
 
             Debug.Log("Picked up " + item.key);
