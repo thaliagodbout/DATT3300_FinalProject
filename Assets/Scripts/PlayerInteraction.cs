@@ -11,7 +11,7 @@ public class PlayerInteraction : MonoBehaviour
     private DialogueTrigger otherDialogueTrigger;
     private PuzzleDialogueTrigger puzzleDialogueTrigger;
 
-    private string inventoryItem;
+    static string inventoryItem;
 
     void Start() {
 
@@ -134,7 +134,7 @@ public class PlayerInteraction : MonoBehaviour
             ItemPickup item = triggeringObj.GetComponent("ItemPickup") as ItemPickup;
 
             inventoryItem = item.key;
-            triggeringObj.SetActive(false);
+            item.pickUp();
 
             Debug.Log("Picked up " + item.key);
         }

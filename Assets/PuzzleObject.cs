@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PuzzleObject : MonoBehaviour
 {
-    private bool solved = false;
+    static bool solved = false;
     public string requiredKey;
 
     public GameObject solvedPuzzle;
@@ -18,7 +18,10 @@ public class PuzzleObject : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (solved) {
+            GetComponent<MeshRenderer>().enabled = false;
+            solvedPuzzle.SetActive(true);
+        }
     }
 
     public bool isSolved() {
@@ -31,7 +34,5 @@ public class PuzzleObject : MonoBehaviour
 
     public void solve() {
         solved = true;
-        GetComponent<MeshRenderer>().enabled = false;
-        solvedPuzzle.SetActive(true);
     }
 }
