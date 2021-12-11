@@ -22,14 +22,16 @@ public class PlayerInteraction : MonoBehaviour
             // Activate prompt text
             if ((triggeringObj.tag != "PuzzleObject") && (otherDialogueTrigger.isInDialogue())) {
                 promptText.GetComponent<Animator>().SetBool("IsOpen", false);
-                
+
             } else if ((triggeringObj.tag == "PuzzleObject") && (puzzleDialogueTrigger.isInDialogue())) {
                 promptText.GetComponent<Animator>().SetBool("IsOpen", false);
                 // TODO: add custom text for puzzle prompt dialogue!
+            } else if (triggeringObj.tag == "PickUpItem") {
+                promptText.GetComponent<Animator>().SetBool("IsOpen", true);
 
             } else {
                 // if (triggeringObj.tag != "PuzzleObject") {
-                    promptText.GetComponent<Animator>().SetBool("IsOpen", true);
+                promptText.GetComponent<Animator>().SetBool("IsOpen", true);
                 // }
             }
 
@@ -37,6 +39,10 @@ public class PlayerInteraction : MonoBehaviour
             if(Input.GetKeyDown(KeyCode.E)) {
                 if (triggeringObj.tag == "PuzzleObject") {
                     puzzleObjectInteraction();
+                } else if (triggeringObj.tag == "PickUpItem") {
+                    pickUpItemInteraction();
+                    otherDialogueTrigger.TriggerDialogue();
+
                 } else {
                     otherDialogueTrigger.TriggerDialogue();
                 }
@@ -62,6 +68,12 @@ public class PlayerInteraction : MonoBehaviour
             triggering = true;
             Debug.Log("Triggering puzzle object!!");
 
+        } else if (other.tag == "PickUpItem") { // For pickup items
+            triggeringObj = other.gameObject;
+            otherDialogueTrigger = triggeringObj.GetComponent("DialogueTrigger") as DialogueTrigger;
+            triggering = true;
+            Debug.Log("Triggering pickup item");
+
         } else if (other.tag == "Portal") { // For well
             triggeringObj = other.gameObject;
             otherDialogueTrigger = triggeringObj.GetComponent("DialogueTrigger") as DialogueTrigger;
@@ -76,11 +88,18 @@ public class PlayerInteraction : MonoBehaviour
             triggering = false;
             triggeringObj = null;
             otherDialogueTrigger.notInDialogue();
+
         } else if (other.tag == "PuzzleObject") {
             triggering = false;
             triggeringObj = null;
             puzzleDialogueTrigger.notInDialogue();
+
         } else if (other.tag == "Portal") {
+            triggering = false;
+            triggeringObj = null;
+            otherDialogueTrigger.notInDialogue();
+
+        } else if (other.tag == "PickUpItem") {
             triggering = false;
             triggeringObj = null;
             otherDialogueTrigger.notInDialogue();
@@ -95,7 +114,10 @@ public class PlayerInteraction : MonoBehaviour
         PuzzleObject puzzleObject = triggeringObj.GetComponent("PuzzleObject") as PuzzleObject;
 
         if (puzzleObject.getRequiredKey() == inventoryItem) { // Can be solved
-            puzzleDialogueTrigger.TriggerSolvedDialogue();
+            puzzleDialogueTrigger.TriggerSolvableDialogue();
+
+            inventoryItem = "";
+            puzzleObject.solve();
 
         } else if (puzzleObject.isSolved()) { // Already solved
             puzzleDialogueTrigger.TriggerSolvedDialogue();
@@ -105,5 +127,16 @@ public class PlayerInteraction : MonoBehaviour
 
         }
 
+    }
+
+    private void pickUpItemInteraction() {
+        if (triggeringObj.GetComponent("ItemPickup") != null) {
+            ItemPickup item = triggeringObj.GetComponent("ItemPickup") as ItemPickup;
+
+            inventoryItem = item.key;
+            triggeringObj.SetActive(false);
+
+            Debug.Log("Picked up " + item.key);
+        }
     }
 }

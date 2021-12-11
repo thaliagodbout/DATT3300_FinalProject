@@ -7,6 +7,8 @@ public class PuzzleObject : MonoBehaviour
     private bool solved = false;
     public string requiredKey;
 
+    public GameObject solvedPuzzle;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -29,5 +31,7 @@ public class PuzzleObject : MonoBehaviour
 
     public void solve() {
         solved = true;
+        GetComponent<MeshRenderer>().enabled = false;
+        solvedPuzzle.SetActive(true);
     }
 }

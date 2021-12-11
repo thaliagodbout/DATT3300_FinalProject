@@ -77,6 +77,10 @@ public class DialogueManager : MonoBehaviour
         } else if (playerInteraction.getTriggeringObj().tag == "PuzzleObject") {
             playerMovementController.enableControls();
             dialogueBoxAnimator.SetBool("IsOpen", false);
+
+        } else if (playerInteraction.getTriggeringObj().tag == "PickUpItem") {
+            playerMovementController.enableControls();
+            dialogueBoxAnimator.SetBool("IsOpen", false);
         }
         // playerMovementController.enableControls();
 
