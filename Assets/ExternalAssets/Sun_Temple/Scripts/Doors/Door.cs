@@ -77,9 +77,7 @@ namespace SunTemple
 				// if (Input.GetKeyDown (KeyCode.Mouse0)) {
 				if (Input.GetKeyDown (KeyCode.E)) {
 					TryToOpen ();
-					Debug.Log("Trying to open");
 				}
-
 
 				if (cursor != null) {
 					CursorHint ();
@@ -100,12 +98,10 @@ namespace SunTemple
 				if (DoorCollider.Raycast(ray, out hit, MaxDistance)){					
 					if (IsLocked == false){
 						Activate ();
-						Debug.Log("Opening!!!");
-
 					}
 				}
 			} else {
-									Debug.Log("Not less than max distance");
+				Debug.Log("Not less than max distance");
 
 			}
 		}

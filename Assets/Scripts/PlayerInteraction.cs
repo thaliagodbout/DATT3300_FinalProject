@@ -9,25 +9,37 @@ public class PlayerInteraction : MonoBehaviour
 
     public GameObject promptText;
     private DialogueTrigger otherDialogueTrigger;
-    // private Animator promptAnimator;
+    private PuzzleDialogueTrigger puzzleDialogueTrigger;
+
+    private string inventoryItem;
 
     void Start() {
+
     }
 
     void Update() {
         if (triggering) {
-            // print("Player is triggering with " + triggeringObj);
-
             // Activate prompt text
-            if (otherDialogueTrigger.isInDialogue()) {
+            if ((triggeringObj.tag != "PuzzleObject") && (otherDialogueTrigger.isInDialogue())) {
                 promptText.GetComponent<Animator>().SetBool("IsOpen", false);
+                
+            } else if ((triggeringObj.tag == "PuzzleObject") && (puzzleDialogueTrigger.isInDialogue())) {
+                promptText.GetComponent<Animator>().SetBool("IsOpen", false);
+                // TODO: add custom text for puzzle prompt dialogue!
+
             } else {
-                promptText.GetComponent<Animator>().SetBool("IsOpen", true);
+                // if (triggeringObj.tag != "PuzzleObject") {
+                    promptText.GetComponent<Animator>().SetBool("IsOpen", true);
+                // }
             }
 
             // If player gives input, start interaction dialogue
             if(Input.GetKeyDown(KeyCode.E)) {
-                otherDialogueTrigger.TriggerDialogue();
+                if (triggeringObj.tag == "PuzzleObject") {
+                    puzzleObjectInteraction();
+                } else {
+                    otherDialogueTrigger.TriggerDialogue();
+                }
             }
         } else {
             // Deactivate prompt text
@@ -43,10 +55,13 @@ public class PlayerInteraction : MonoBehaviour
             triggeringObj = other.gameObject; // Get parent GameObject
             otherDialogueTrigger = triggeringObj.GetComponent("DialogueTrigger") as DialogueTrigger;
             triggering = true;
+
         } else if (other.tag == "PuzzleObject") { // For puzzle objects
             triggeringObj = other.gameObject;
-            otherDialogueTrigger = triggeringObj.GetComponent("DialogueTrigger") as DialogueTrigger;
+            puzzleDialogueTrigger = triggeringObj.GetComponent("PuzzleDialogueTrigger") as PuzzleDialogueTrigger;
             triggering = true;
+            Debug.Log("Triggering puzzle object!!");
+
         } else if (other.tag == "Portal") { // For well
             triggeringObj = other.gameObject;
             otherDialogueTrigger = triggeringObj.GetComponent("DialogueTrigger") as DialogueTrigger;
@@ -64,7 +79,7 @@ public class PlayerInteraction : MonoBehaviour
         } else if (other.tag == "PuzzleObject") {
             triggering = false;
             triggeringObj = null;
-            otherDialogueTrigger.notInDialogue();
+            puzzleDialogueTrigger.notInDialogue();
         } else if (other.tag == "Portal") {
             triggering = false;
             triggeringObj = null;
@@ -74,5 +89,21 @@ public class PlayerInteraction : MonoBehaviour
 
     public GameObject getTriggeringObj() {
         return triggeringObj;
+    }
+
+    private void puzzleObjectInteraction() {
+        PuzzleObject puzzleObject = triggeringObj.GetComponent("PuzzleObject") as PuzzleObject;
+
+        if (puzzleObject.getRequiredKey() == inventoryItem) { // Can be solved
+            puzzleDialogueTrigger.TriggerSolvedDialogue();
+
+        } else if (puzzleObject.isSolved()) { // Already solved
+            puzzleDialogueTrigger.TriggerSolvedDialogue();
+
+        } else { // Cannot be solved
+            puzzleDialogueTrigger.TriggerInitialDialogue();
+
+        }
+
     }
 }
