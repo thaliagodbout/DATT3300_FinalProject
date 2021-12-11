@@ -11,7 +11,7 @@ public class PlayerInteraction : MonoBehaviour
     private DialogueTrigger otherDialogueTrigger;
     private PuzzleDialogueTrigger puzzleDialogueTrigger;
 
-    static string inventoryItem;
+    private static string inventoryItem;
 
     void Start() {
 
@@ -66,13 +66,11 @@ public class PlayerInteraction : MonoBehaviour
             triggeringObj = other.gameObject;
             puzzleDialogueTrigger = triggeringObj.GetComponent("PuzzleDialogueTrigger") as PuzzleDialogueTrigger;
             triggering = true;
-            Debug.Log("Triggering puzzle object!!");
 
         } else if (other.tag == "PickUpItem") { // For pickup items
             triggeringObj = other.gameObject;
             otherDialogueTrigger = triggeringObj.GetComponent("DialogueTrigger") as DialogueTrigger;
             triggering = true;
-            Debug.Log("Triggering pickup item");
 
         } else if (other.tag == "Portal") { // For well
             triggeringObj = other.gameObject;

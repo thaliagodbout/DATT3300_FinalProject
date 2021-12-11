@@ -34,5 +34,6 @@ public class PuzzleObject : MonoBehaviour
 
     public void solve() {
         solved = true;
+        ProgressManager.solveAnother();
     }
 }

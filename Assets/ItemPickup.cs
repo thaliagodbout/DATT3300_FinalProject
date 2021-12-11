@@ -5,7 +5,7 @@ using UnityEngine;
 public class ItemPickup : MonoBehaviour
 {
     public string key;
-    static bool isPickedUp;
+    private static bool isPickedUp;
 
     // Start is called before the first frame update
     void Start()
