@@ -6,6 +6,7 @@ TagManager:
   tags:
   - NPC
   - PuzzleObject
+  - Portal
   layers:
   - Default
   - TransparentFX

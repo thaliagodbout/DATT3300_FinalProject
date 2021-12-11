@@ -20,22 +20,17 @@ public class PlayerInteraction : MonoBehaviour
 
             // Activate prompt text
             if (otherDialogueTrigger.isInDialogue()) {
-                
-                // promptText.SetActive(false);
                 promptText.GetComponent<Animator>().SetBool("IsOpen", false);
-
             } else {
-                // promptText.SetActive(true);
                 promptText.GetComponent<Animator>().SetBool("IsOpen", true);
-
             }
 
+            // If player gives input, start interaction dialogue
             if(Input.GetKeyDown(KeyCode.E)) {
                 otherDialogueTrigger.TriggerDialogue();
             }
         } else {
-            // Deactivate text
-            // promptText.SetActive(false);
+            // Deactivate prompt text
             promptText.GetComponent<Animator>().SetBool("IsOpen", false);
 
         }
@@ -45,10 +40,14 @@ public class PlayerInteraction : MonoBehaviour
         Debug.Log("Enter collider");
 
         if (other.tag == "NPC") { // For NPCs
-            triggeringObj = other.gameObject;
+            triggeringObj = other.gameObject; // Get parent GameObject
             otherDialogueTrigger = triggeringObj.GetComponent("DialogueTrigger") as DialogueTrigger;
             triggering = true;
         } else if (other.tag == "PuzzleObject") { // For puzzle objects
+            triggeringObj = other.gameObject;
+            otherDialogueTrigger = triggeringObj.GetComponent("DialogueTrigger") as DialogueTrigger;
+            triggering = true;
+        } else if (other.tag == "Portal") { // For well
             triggeringObj = other.gameObject;
             otherDialogueTrigger = triggeringObj.GetComponent("DialogueTrigger") as DialogueTrigger;
             triggering = true;
@@ -66,6 +65,14 @@ public class PlayerInteraction : MonoBehaviour
             triggering = false;
             triggeringObj = null;
             otherDialogueTrigger.notInDialogue();
+        } else if (other.tag == "Portal") {
+            triggering = false;
+            triggeringObj = null;
+            otherDialogueTrigger.notInDialogue();
         }
+    }
+
+    public GameObject getTriggeringObj() {
+        return triggeringObj;
     }
 }

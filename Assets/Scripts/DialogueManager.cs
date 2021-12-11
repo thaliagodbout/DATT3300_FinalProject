@@ -9,11 +9,11 @@ public class DialogueManager : MonoBehaviour
     public TMP_Text nameText;
     public TMP_Text dialogueText;
 
-    public Animator animator;
+    public Animator dialogueBoxAnimator;
 
     private Queue<string> sentences;
     public FirstPersonMovement playerMovementController;
-
+    public PlayerInteraction playerInteraction;
 
     // Start is called before the first frame update
     void Start()
@@ -24,10 +24,9 @@ public class DialogueManager : MonoBehaviour
     public void StartDialogue(Dialogue dialogue) {
         Debug.Log("Starting conversation with " + dialogue.name);
         
-        animator.SetBool("IsOpen", true);
+        dialogueBoxAnimator.SetBool("IsOpen", true);
         playerMovementController.disableControls();
 
-        // nameText = GetComponent<TMP_Text>();
         nameText.text = dialogue.name;
 
         sentences.Clear();
@@ -64,8 +63,22 @@ public class DialogueManager : MonoBehaviour
 
     void EndDialogue() {
         Debug.Log("End of conversation.");
-        animator.SetBool("IsOpen", false);
-        playerMovementController.enableControls();
+
+        // Handle post-dialogue actions depending on object
+        if (playerInteraction.getTriggeringObj().tag == "NPC") {
+            playerMovementController.enableControls();
+            dialogueBoxAnimator.SetBool("IsOpen", false);
+
+        } else if (playerInteraction.getTriggeringObj().tag == "Portal") {
+            playerMovementController.enableControls();
+            dialogueBoxAnimator.SetBool("IsOpen", false);
+            FindObjectOfType<LevelLoader>().LoadNextLevel();
+
+        } else if (playerInteraction.getTriggeringObj().tag == "PuzzleObject") {
+            playerMovementController.enableControls();
+            dialogueBoxAnimator.SetBool("IsOpen", false);
+        }
+        // playerMovementController.enableControls();
 
     }
 
