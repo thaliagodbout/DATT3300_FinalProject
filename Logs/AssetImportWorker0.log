@@ -1261,3 +1261,88 @@ AssetImportParameters requested are different than current active one (requested
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 3342.152015 seconds.
+  path: Assets/ExternalAssets/Sun_Temple/Prefabs/Modules_Common
+  artifactKey: Guid(d4825481041bae54d8f02b62d2ac524e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalAssets/Sun_Temple/Prefabs/Modules_Common using Guid(d4825481041bae54d8f02b62d2ac524e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '45560d117a8866ca0e84091470706fbc') in 0.019663 seconds 
+  Import took 0.035814 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.036410 seconds.
+  path: Assets/ExternalAssets/Sun_Temple/Prefabs/Modules_Common/Bld_Joiner_A.prefab
+  artifactKey: Guid(e004479258b08ff4eb573d27e419b271) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalAssets/Sun_Temple/Prefabs/Modules_Common/Bld_Joiner_A.prefab using Guid(e004479258b08ff4eb573d27e419b271) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6c68aa8635218c522296070be326c2d0') in 0.079075 seconds 
+  Import took 0.085820 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.290200 seconds.
+  path: Assets/ExternalAssets/Sun_Temple/Prefabs/Modules_Structs
+  artifactKey: Guid(fd9c601f2808e2948ab1cf34889c80f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalAssets/Sun_Temple/Prefabs/Modules_Structs using Guid(fd9c601f2808e2948ab1cf34889c80f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a70c22fbc17541b64c06a91a42c2d2e2') in 0.005511 seconds 
+  Import took 0.019616 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.043479 seconds.
+  path: Assets/ExternalAssets/Sun_Temple/Prefabs/Modules_Structs/Struct_ArcWall_A.prefab
+  artifactKey: Guid(818924cb43180bc45b426ef79e4bf9df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalAssets/Sun_Temple/Prefabs/Modules_Structs/Struct_ArcWall_A.prefab using Guid(818924cb43180bc45b426ef79e4bf9df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6b11976a0d834a650ea10d106655cbfd') in 0.028630 seconds 
+  Import took 0.034948 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.695302 seconds.
+  path: Assets/ExternalAssets/Sun_Temple/Content
+  artifactKey: Guid(89ba4a4810fc5c54888ee30c54d68c10) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalAssets/Sun_Temple/Content using Guid(89ba4a4810fc5c54888ee30c54d68c10) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3ad156615a08c003c55f9fca72de2da1') in 0.005136 seconds 
+  Import took 0.018663 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 73.906465 seconds.
+  path: Assets/Scenes/Living_Eusapia.unity
+  artifactKey: Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Living_Eusapia.unity using Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '63716f6623d524f306423f0b9f713d20') in 0.006968 seconds 
+  Import took 0.021363 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005539 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.38 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.539 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1540ms)
+		BeginReloadAssembly (122ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (3ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (35ms)
+		EndReloadAssembly (1361ms)
+			LoadAssemblies (96ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (314ms)
+			ReleaseScriptCaches (3ms)
+			RebuildScriptCaches (62ms)
+			SetupLoadedEditorAssemblies (754ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (132ms)
+				ProcessInitializeOnLoadAttributes (601ms)
+				ProcessInitializeOnLoadMethodAttributes (7ms)
+				AfterProcessingInitializeOnLoad (7ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (5ms)
+Platform modules already initialized, skipping
