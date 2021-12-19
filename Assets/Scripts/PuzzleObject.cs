@@ -10,6 +10,8 @@ public class PuzzleObject : MonoBehaviour
     public GameObject solvedPuzzle;
     public int ID;
 
+    public bool disableAfterSolve;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -22,8 +24,10 @@ public class PuzzleObject : MonoBehaviour
         solved = ProgressManager.puzzleStatuses[ID];
         
         if (solved) {
-            GetComponent<MeshRenderer>().enabled = false;
-            GetComponent<Collider>().enabled = false;
+            if (disableAfterSolve) {
+                GetComponent<MeshRenderer>().enabled = false;
+                GetComponent<Collider>().enabled = false;
+            }
             solvedPuzzle.SetActive(true);
         }
     }

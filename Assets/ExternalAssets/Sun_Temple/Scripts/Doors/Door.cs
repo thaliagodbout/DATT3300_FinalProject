@@ -101,7 +101,7 @@ namespace SunTemple
 					}
 				}
 			} else {
-				Debug.Log("Not less than max distance");
+				// Debug.Log("Not less than max distance");
 
 			}
 		}

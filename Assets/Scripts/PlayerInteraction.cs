@@ -38,8 +38,12 @@ public class PlayerInteraction : MonoBehaviour
             if(Input.GetKeyDown(KeyCode.E)) {
                 if (triggeringObj.tag == "PuzzleObject") {
                     puzzleObjectInteraction();
+
                 } else if (triggeringObj.tag == "PickUpItem") {
-                    pickUpItemInteraction();
+                    if (!otherDialogueTrigger.isInDialogue()) {
+                        pickUpItemInteraction();
+
+                    }
                     otherDialogueTrigger.TriggerDialogue();
 
                 } else {
@@ -54,8 +58,6 @@ public class PlayerInteraction : MonoBehaviour
     }
 
     void OnTriggerEnter(Collider other) {
-        Debug.Log("Enter collider");
-
         if (other.tag == "NPC") { // For NPCs
             triggeringObj = other.gameObject; // Get parent GameObject
             otherDialogueTrigger = triggeringObj.GetComponent("DialogueTrigger") as DialogueTrigger;
@@ -75,6 +77,7 @@ public class PlayerInteraction : MonoBehaviour
             triggeringObj = other.gameObject;
             otherDialogueTrigger = triggeringObj.GetComponent("DialogueTrigger") as DialogueTrigger;
             triggering = true;
+
         } else if (other.tag == "Benign") {
             triggeringObj = other.gameObject;
             otherDialogueTrigger = triggeringObj.GetComponent("DialogueTrigger") as DialogueTrigger;
@@ -83,8 +86,6 @@ public class PlayerInteraction : MonoBehaviour
     }
 
     void OnTriggerExit(Collider other) {
-        Debug.Log("Exit collider");
-
         if (other.tag == "NPC") {
             triggering = false;
             triggeringObj = null;
@@ -119,10 +120,10 @@ public class PlayerInteraction : MonoBehaviour
     private void puzzleObjectInteraction() {
         PuzzleObject puzzleObject = triggeringObj.GetComponent("PuzzleObject") as PuzzleObject;
 
-        if (puzzleObject.getRequiredKey() == ProgressManager.inventoryItem) { // Can be solved
+        if (ProgressManager.hasItem(puzzleObject.getRequiredKey())) { // Can be solved
             puzzleDialogueTrigger.TriggerSolvableDialogue();
 
-            ProgressManager.inventoryItem = "";
+            ProgressManager.removeItem(puzzleObject.requiredKey);
             puzzleObject.solve();
 
         } else if (puzzleObject.isSolved()) { // Already solved
@@ -138,7 +139,7 @@ public class PlayerInteraction : MonoBehaviour
         if (triggeringObj.GetComponent("ItemPickup") != null) {
             ItemPickup item = triggeringObj.GetComponent("ItemPickup") as ItemPickup;
 
-            ProgressManager.inventoryItem = item.key;
+            ProgressManager.pickUp(item.key);
             item.pickUp();
 
             Debug.Log("Picked up " + item.key);

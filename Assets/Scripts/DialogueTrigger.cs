@@ -22,7 +22,8 @@ public class DialogueTrigger : MonoBehaviour
     public void notInDialogue() {
         inDialogue = false;
         if (getKeyAfterDialogue) {
-            ProgressManager.inventoryItem = key;
+            Debug.Log("Getting a key after dialogue");
+            ProgressManager.pickUp(key);
         }
     }
 
