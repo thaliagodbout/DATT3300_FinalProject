@@ -2250,6 +2250,8 @@ GameObject:
   m_Component:
   - component: {fileID: 5936103345412438380}
   - component: {fileID: 5936103345420113630}
+  - component: {fileID: 5084614464933587984}
+  - component: {fileID: 4671761905651225906}
   m_Layer: 0
   m_Name: PT_Medieval_Female_Peasant_01_a
   m_TagString: Untagged
@@ -2294,6 +2296,32 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!65 &5084614464933587984
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5936103345412859212}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.59831816, y: 2.2703178, z: 0.43819645}
+  m_Center: {x: -0.012841438, y: 0.63516015, z: 0.017373066}
+--- !u!65 &4671761905651225906
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5936103345412859212}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.395913, y: 2.2844908, z: 1.2028195}
+  m_Center: {x: -0.010147872, y: 0.64224607, z: -0.018994115}
 --- !u!1 &5936103345412859214
 GameObject:
   m_ObjectHideFlags: 0

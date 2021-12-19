@@ -1188,6 +1188,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1244539903904952439}
   - component: {fileID: 1244539903914237919}
+  - component: {fileID: 8024647440031364872}
+  - component: {fileID: 3841120974664618277}
   m_Layer: 0
   m_Name: PT_Medieval_Male_Peasant_01
   m_TagString: Untagged
@@ -1232,6 +1234,32 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!65 &8024647440031364872
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1244539903904722007}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.395913, y: 2.2844908, z: 1.2028195}
+  m_Center: {x: -0.010147872, y: 0.64224607, z: -0.018994115}
+--- !u!65 &3841120974664618277
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1244539903904722007}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.59831816, y: 2.2703178, z: 0.43819645}
+  m_Center: {x: -0.012841438, y: 0.63516015, z: 0.017373066}
 --- !u!1 &1244539903904722009
 GameObject:
   m_ObjectHideFlags: 0

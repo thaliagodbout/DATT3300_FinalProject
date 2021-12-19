@@ -653,3 +653,611 @@ AssetImportParameters requested are different than current active one (requested
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005225 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.74 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.324 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1324ms)
+		BeginReloadAssembly (153ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (3ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (50ms)
+		EndReloadAssembly (1116ms)
+			LoadAssemblies (90ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (275ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (41ms)
+			SetupLoadedEditorAssemblies (624ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (3ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (91ms)
+				ProcessInitializeOnLoadAttributes (514ms)
+				ProcessInitializeOnLoadMethodAttributes (8ms)
+				AfterProcessingInitializeOnLoad (7ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (5ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.74 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3759 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 200.6 MB.
+System memory in use after: 200.7 MB.
+
+Unloading 18 unused Assets to reduce memory usage. Loaded Objects now: 4429.
+Total: 3.444800 ms (FindLiveObjects: 0.322500 ms CreateObjectMapping: 0.173400 ms MarkObjects: 2.733900 ms  DeleteObjects: 0.214200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005229 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.80 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.266 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1266ms)
+		BeginReloadAssembly (133ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (41ms)
+		EndReloadAssembly (1080ms)
+			LoadAssemblies (84ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (270ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (40ms)
+			SetupLoadedEditorAssemblies (595ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (3ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (89ms)
+				ProcessInitializeOnLoadAttributes (484ms)
+				ProcessInitializeOnLoadMethodAttributes (9ms)
+				AfterProcessingInitializeOnLoad (9ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.75 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3759 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 200.6 MB.
+System memory in use after: 200.7 MB.
+
+Unloading 18 unused Assets to reduce memory usage. Loaded Objects now: 4431.
+Total: 3.539700 ms (FindLiveObjects: 0.353000 ms CreateObjectMapping: 0.182300 ms MarkObjects: 2.746700 ms  DeleteObjects: 0.256800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005158 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.84 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.295 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1295ms)
+		BeginReloadAssembly (102ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (3ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (33ms)
+		EndReloadAssembly (1140ms)
+			LoadAssemblies (85ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (267ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (38ms)
+			SetupLoadedEditorAssemblies (647ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (105ms)
+				ProcessInitializeOnLoadAttributes (519ms)
+				ProcessInitializeOnLoadMethodAttributes (9ms)
+				AfterProcessingInitializeOnLoad (8ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (5ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.74 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3759 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 200.7 MB.
+System memory in use after: 200.8 MB.
+
+Unloading 18 unused Assets to reduce memory usage. Loaded Objects now: 4433.
+Total: 3.494900 ms (FindLiveObjects: 0.326500 ms CreateObjectMapping: 0.182100 ms MarkObjects: 2.768200 ms  DeleteObjects: 0.217200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 5355.391589 seconds.
+  path: Assets/ExternalAssets/Polytope Studio/Lowpoly Medieval Characters/Sources/Modular_NPC/Materials/PT_Medieval_Modular_NPC_Material_1.mat
+  artifactKey: Guid(c79855c6f54ed954293d041acc3120a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalAssets/Polytope Studio/Lowpoly Medieval Characters/Sources/Modular_NPC/Materials/PT_Medieval_Modular_NPC_Material_1.mat using Guid(c79855c6f54ed954293d041acc3120a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b9b4a4aa30d073a41a06c1756e6d6e75') in 0.094661 seconds 
+  Import took 0.102188 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005206 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.77 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.291 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1292ms)
+		BeginReloadAssembly (111ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (3ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (33ms)
+		EndReloadAssembly (1127ms)
+			LoadAssemblies (86ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (309ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (44ms)
+			SetupLoadedEditorAssemblies (587ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (95ms)
+				ProcessInitializeOnLoadAttributes (470ms)
+				ProcessInitializeOnLoadMethodAttributes (9ms)
+				AfterProcessingInitializeOnLoad (8ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.83 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3759 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 200.7 MB.
+System memory in use after: 200.8 MB.
+
+Unloading 18 unused Assets to reduce memory usage. Loaded Objects now: 4436.
+Total: 5.784400 ms (FindLiveObjects: 1.214100 ms CreateObjectMapping: 0.521300 ms MarkObjects: 3.748600 ms  DeleteObjects: 0.298100 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 292.677454 seconds.
+  path: Assets/ExternalAssets/Polytope Studio/Lowpoly Medieval Characters/Animations/Animations/PT_Medieval_Pose_01.fbx
+  artifactKey: Guid(fe7e68b2be2cc23428459b55fee65321) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalAssets/Polytope Studio/Lowpoly Medieval Characters/Animations/Animations/PT_Medieval_Pose_01.fbx using Guid(fe7e68b2be2cc23428459b55fee65321) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '24d5924cf4a8a4c483f4539686de9f4d') in 0.174108 seconds 
+  Import took 0.182078 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.006093 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.88 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.244 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1244ms)
+		BeginReloadAssembly (103ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (3ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (33ms)
+		EndReloadAssembly (1089ms)
+			LoadAssemblies (81ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (287ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (38ms)
+			SetupLoadedEditorAssemblies (579ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (3ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (97ms)
+				ProcessInitializeOnLoadAttributes (463ms)
+				ProcessInitializeOnLoadMethodAttributes (7ms)
+				AfterProcessingInitializeOnLoad (7ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (8ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.76 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3759 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 201.3 MB.
+System memory in use after: 201.4 MB.
+
+Unloading 18 unused Assets to reduce memory usage. Loaded Objects now: 4442.
+Total: 3.558600 ms (FindLiveObjects: 0.336000 ms CreateObjectMapping: 0.173400 ms MarkObjects: 2.830300 ms  DeleteObjects: 0.218000 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 209.890734 seconds.
+  path: Assets/ExternalAssets/Polytope Studio/Lowpoly Medieval Characters/Prefabs/Modular_NPC/Peasants_Citizens/Sets/PT_Medieval_Female_Peasant_01_b.prefab
+  artifactKey: Guid(bc29bbb29749f824285ece7b3ecb5362) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalAssets/Polytope Studio/Lowpoly Medieval Characters/Prefabs/Modular_NPC/Peasants_Citizens/Sets/PT_Medieval_Female_Peasant_01_b.prefab using Guid(bc29bbb29749f824285ece7b3ecb5362) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '41bab72377770ddaace2787aa1a221ef') in 0.057896 seconds 
+  Import took 0.068214 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000292 seconds.
+  path: Assets/ExternalAssets/Polytope Studio/Lowpoly Medieval Characters/Prefabs/Modular_NPC/Peasants_Citizens/Sets/PT_Medieval_Male_Peasant_01.prefab
+  artifactKey: Guid(c2af11c01d1176e4d98619176b00d199) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalAssets/Polytope Studio/Lowpoly Medieval Characters/Prefabs/Modular_NPC/Peasants_Citizens/Sets/PT_Medieval_Male_Peasant_01.prefab using Guid(c2af11c01d1176e4d98619176b00d199) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ab28752084e4ebdf10a54d64c4fb3522') in 0.020016 seconds 
+  Import took 0.028073 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.459394 seconds.
+  path: Assets/ExternalAssets/Polytope Studio/Lowpoly Medieval Characters/Prefabs/Modular_NPC/Peasants_Citizens/Sets/PT_Medieval_Female_Peasant_01_a.prefab
+  artifactKey: Guid(25b8deb3033e5314a94c9c75eed29dcf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalAssets/Polytope Studio/Lowpoly Medieval Characters/Prefabs/Modular_NPC/Peasants_Citizens/Sets/PT_Medieval_Female_Peasant_01_a.prefab using Guid(25b8deb3033e5314a94c9c75eed29dcf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6e1a6dfb26c7c1ac92f14cde12940874') in 0.021186 seconds 
+  Import took 0.028079 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.034729 seconds.
+  path: Assets/ExternalAssets/Polytope Studio/Lowpoly Medieval Characters/Prefabs/Modular_NPC/Peasants_Citizens/Sets/PT_Medieval_Female_Peasant_01_a.prefab
+  artifactKey: Guid(25b8deb3033e5314a94c9c75eed29dcf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalAssets/Polytope Studio/Lowpoly Medieval Characters/Prefabs/Modular_NPC/Peasants_Citizens/Sets/PT_Medieval_Female_Peasant_01_a.prefab using Guid(25b8deb3033e5314a94c9c75eed29dcf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'db83d87299548078c27e8c7592957db9') in 0.021363 seconds 
+  Import took 0.028332 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1933.910719 seconds.
+  path: Assets/ExternalAssets/Polytope Studio/Lowpoly Medieval Characters/Sources/Modular_NPC/Materials/PT_Medieval_Modular_NPC_Material_1.mat
+  artifactKey: Guid(c79855c6f54ed954293d041acc3120a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalAssets/Polytope Studio/Lowpoly Medieval Characters/Sources/Modular_NPC/Materials/PT_Medieval_Modular_NPC_Material_1.mat using Guid(c79855c6f54ed954293d041acc3120a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a87a24a37f5facce325c9aa5ee73fabd') in 0.027506 seconds 
+  Import took 0.035564 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000300 seconds.
+  path: Assets/ExternalAssets/Polytope Studio/Lowpoly Medieval Characters/Sources/Modular_NPC/Materials/PT_Medieval_Modular_NPC_Material_3 1.mat
+  artifactKey: Guid(ec2dddecb006dba46be7824a119c021b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalAssets/Polytope Studio/Lowpoly Medieval Characters/Sources/Modular_NPC/Materials/PT_Medieval_Modular_NPC_Material_3 1.mat using Guid(ec2dddecb006dba46be7824a119c021b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e6b77b56a1bb1a5f6191c1f59da4a966') in 0.022914 seconds 
+  Import took 0.030536 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000296 seconds.
+  path: Assets/ExternalAssets/Polytope Studio/Lowpoly Medieval Characters/Sources/Modular_NPC/Materials/PT_Medieval_Modular_NPC_Material_2.mat
+  artifactKey: Guid(5ee7dd376ce5cff40b7a6837dfef5504) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalAssets/Polytope Studio/Lowpoly Medieval Characters/Sources/Modular_NPC/Materials/PT_Medieval_Modular_NPC_Material_2.mat using Guid(5ee7dd376ce5cff40b7a6837dfef5504) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4fc0666677846b2edf61b6e5e7c5a09a') in 0.031277 seconds 
+  Import took 0.039641 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.231587 seconds.
+  path: Assets/ExternalAssets/Polytope Studio/Lowpoly Medieval Characters/Sources/Modular_NPC/Materials/PT_Medieval_Modular_NPC_Material_4.mat
+  artifactKey: Guid(ec2dddecb006dba46be7824a119c021b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalAssets/Polytope Studio/Lowpoly Medieval Characters/Sources/Modular_NPC/Materials/PT_Medieval_Modular_NPC_Material_4.mat using Guid(ec2dddecb006dba46be7824a119c021b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f5457e802203638a937f4773fa087575') in 0.012506 seconds 
+  Import took 0.019828 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 67.178511 seconds.
+  path: Assets/ExternalAssets/Polytope Studio/Lowpoly Medieval Characters/Sources/Modular_NPC/Materials/Joe.mat
+  artifactKey: Guid(c79855c6f54ed954293d041acc3120a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalAssets/Polytope Studio/Lowpoly Medieval Characters/Sources/Modular_NPC/Materials/Joe.mat using Guid(c79855c6f54ed954293d041acc3120a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1cd661f2b6c785e5924b382cf99e5bb4') in 0.012132 seconds 
+  Import took 0.020233 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 48.394911 seconds.
+  path: Assets/ExternalAssets/Polytope Studio/Lowpoly Medieval Characters/Sources/Modular_NPC/Materials/Guard2.mat
+  artifactKey: Guid(5ee7dd376ce5cff40b7a6837dfef5504) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalAssets/Polytope Studio/Lowpoly Medieval Characters/Sources/Modular_NPC/Materials/Guard2.mat using Guid(5ee7dd376ce5cff40b7a6837dfef5504) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cd58e47519bd6e614eca146479d2fa18') in 0.012575 seconds 
+  Import took 0.021503 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 15.992314 seconds.
+  path: Assets/ExternalAssets/Polytope Studio/Lowpoly Medieval Characters/Sources/Modular_NPC/Materials/Guard1.mat
+  artifactKey: Guid(a115d6b2f6ffd7545bd1d44c693d98bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalAssets/Polytope Studio/Lowpoly Medieval Characters/Sources/Modular_NPC/Materials/Guard1.mat using Guid(a115d6b2f6ffd7545bd1d44c693d98bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1459ffbd5120f9b81d5312263597af20') in 0.012924 seconds 
+  Import took 0.020834 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 852.207159 seconds.
+  path: Assets/ExternalAssets/Polytope Studio/Lowpoly Medieval Characters/Sources/Modular_NPC/Materials/Brenda.mat
+  artifactKey: Guid(ec2dddecb006dba46be7824a119c021b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalAssets/Polytope Studio/Lowpoly Medieval Characters/Sources/Modular_NPC/Materials/Brenda.mat using Guid(ec2dddecb006dba46be7824a119c021b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5f260bf35a8d76c4e54266d6b8d5806b') in 0.014304 seconds 
+  Import took 0.023422 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 178.969096 seconds.
+  path: Assets/ExternalAssets/Polytope Studio/Lowpoly Medieval Characters/Sources/Modular_NPC/Materials/Guard1.mat
+  artifactKey: Guid(a115d6b2f6ffd7545bd1d44c693d98bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalAssets/Polytope Studio/Lowpoly Medieval Characters/Sources/Modular_NPC/Materials/Guard1.mat using Guid(a115d6b2f6ffd7545bd1d44c693d98bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '45568b09e859b349fb585eca67dfbdd6') in 0.015492 seconds 
+  Import took 0.025101 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005228 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.06 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.516 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1517ms)
+		BeginReloadAssembly (143ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (3ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (54ms)
+		EndReloadAssembly (1319ms)
+			LoadAssemblies (84ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (282ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (47ms)
+			SetupLoadedEditorAssemblies (784ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (120ms)
+				ProcessInitializeOnLoadAttributes (640ms)
+				ProcessInitializeOnLoadMethodAttributes (10ms)
+				AfterProcessingInitializeOnLoad (8ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (7ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.96 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3759 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 201.4 MB.
+System memory in use after: 201.5 MB.
+
+Unloading 18 unused Assets to reduce memory usage. Loaded Objects now: 4445.
+Total: 3.562300 ms (FindLiveObjects: 0.379900 ms CreateObjectMapping: 0.186600 ms MarkObjects: 2.771900 ms  DeleteObjects: 0.223200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 3243.663375 seconds.
+  path: Assets/ExternalAssets/Polytope Studio/Lowpoly Medieval Characters/Sources/Modular_NPC/Materials/Brenda.mat
+  artifactKey: Guid(ec2dddecb006dba46be7824a119c021b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalAssets/Polytope Studio/Lowpoly Medieval Characters/Sources/Modular_NPC/Materials/Brenda.mat using Guid(ec2dddecb006dba46be7824a119c021b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8021c6afd4f4e5543b07279090d3a82d') in 0.075667 seconds 
+  Import took 0.083414 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000290 seconds.
+  path: Assets/ExternalAssets/Polytope Studio/Lowpoly Medieval Characters/Sources/Modular_NPC/Materials/Guard1.mat
+  artifactKey: Guid(a115d6b2f6ffd7545bd1d44c693d98bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalAssets/Polytope Studio/Lowpoly Medieval Characters/Sources/Modular_NPC/Materials/Guard1.mat using Guid(a115d6b2f6ffd7545bd1d44c693d98bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '29de5d0f5f61dcc7d0cb75acb514eb5c') in 0.016892 seconds 
+  Import took 0.024879 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000289 seconds.
+  path: Assets/ExternalAssets/Polytope Studio/Lowpoly Medieval Characters/Sources/Modular_NPC/Materials/Guard2.mat
+  artifactKey: Guid(5ee7dd376ce5cff40b7a6837dfef5504) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalAssets/Polytope Studio/Lowpoly Medieval Characters/Sources/Modular_NPC/Materials/Guard2.mat using Guid(5ee7dd376ce5cff40b7a6837dfef5504) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd208a084648a8e43c52d1a44ffc99994') in 0.015021 seconds 
+  Import took 0.022004 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005270 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.75 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.256 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1256ms)
+		BeginReloadAssembly (105ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (3ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (35ms)
+		EndReloadAssembly (1097ms)
+			LoadAssemblies (81ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (302ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (42ms)
+			SetupLoadedEditorAssemblies (581ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (3ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (91ms)
+				ProcessInitializeOnLoadAttributes (471ms)
+				ProcessInitializeOnLoadMethodAttributes (7ms)
+				AfterProcessingInitializeOnLoad (7ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (5ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.74 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3759 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 201.4 MB.
+System memory in use after: 201.5 MB.
+
+Unloading 18 unused Assets to reduce memory usage. Loaded Objects now: 4448.
+Total: 3.738900 ms (FindLiveObjects: 0.354900 ms CreateObjectMapping: 0.211500 ms MarkObjects: 2.930600 ms  DeleteObjects: 0.240800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 464.590361 seconds.
+  path: Assets/ExternalAssets/Polytope Studio/Lowpoly Medieval Characters/Sources/Modular_NPC/Materials/Joe.mat
+  artifactKey: Guid(c79855c6f54ed954293d041acc3120a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalAssets/Polytope Studio/Lowpoly Medieval Characters/Sources/Modular_NPC/Materials/Joe.mat using Guid(c79855c6f54ed954293d041acc3120a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '938451b84ac804dd950cfa1e4c5b7142') in 0.075207 seconds 
+  Import took 0.082707 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.006204 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.80 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.398 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1398ms)
+		BeginReloadAssembly (117ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (3ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (34ms)
+		EndReloadAssembly (1228ms)
+			LoadAssemblies (80ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (284ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (59ms)
+			SetupLoadedEditorAssemblies (659ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (121ms)
+				ProcessInitializeOnLoadAttributes (518ms)
+				ProcessInitializeOnLoadMethodAttributes (7ms)
+				AfterProcessingInitializeOnLoad (7ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (5ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.74 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3759 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 201.4 MB.
+System memory in use after: 201.5 MB.
+
+Unloading 18 unused Assets to reduce memory usage. Loaded Objects now: 4451.
+Total: 3.667800 ms (FindLiveObjects: 0.364900 ms CreateObjectMapping: 0.200600 ms MarkObjects: 2.857700 ms  DeleteObjects: 0.243600 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 

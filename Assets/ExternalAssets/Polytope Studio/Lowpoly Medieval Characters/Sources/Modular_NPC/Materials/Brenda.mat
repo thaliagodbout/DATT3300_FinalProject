@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: PT_Medieval_Modular_NPC_Material_1
+  m_Name: Brenda
   m_Shader: {fileID: 4800000, guid: 5fdb92501eac48d4a87329098a14e790, type: 3}
   m_ShaderKeywords: _METALICON_ON _METALLICON_ON _SMOOTHNESSON_ON
   m_LightmapFlags: 4
@@ -87,28 +87,28 @@ Material:
     - _CLOTH1COLOR1: {r: 0, g: 0.1792453, b: 0.05062231, a: 0}
     - _CLOTH2COLOR: {r: 0.16834283, g: 0.2833042, b: 0.3679245, a: 0}
     - _CLOTH2COLOR1: {r: 1, g: 0, b: 0, a: 0}
-    - _CLOTH3COLOR: {r: 0.38679248, g: 0.016420428, b: 0.016420428, a: 0}
+    - _CLOTH3COLOR: {r: 0.6603774, g: 0.40806338, b: 0.40806338, a: 0}
     - _CLOTH3COLOR1: {r: 0.3962264, g: 0.3391397, b: 0.2710039, a: 0}
-    - _CLOTH4COLOR: {r: 0.6037736, g: 0.09973892, b: 0.03702387, a: 0}
+    - _CLOTH4COLOR: {r: 0.7735849, g: 0.52706534, b: 0.105820596, a: 0}
     - _CLOTH4COLOR1: {r: 0.2011392, g: 0.3773585, b: 0.3739074, a: 0}
     - _COATOFARMSCOLOR: {r: 1, g: 0, b: 0, a: 0}
-    - _EYESCOLOR: {r: 0.09570001, g: 0.24528301, b: 0.035866853, a: 1}
+    - _EYESCOLOR: {r: 0.19316615, g: 0.24528301, b: 0.047436804, a: 1}
     - _EYESCOLOR1: {r: 0.0734529, g: 0.1320755, b: 0.05046281, a: 1}
     - _FEATHERS1COLOR: {r: 0.7735849, g: 0.492613, b: 0.492613, a: 0}
     - _FEATHERS1COLOR1: {r: 0.7735849, g: 0.492613, b: 0.492613, a: 0}
     - _FEATHERS2COLOR: {r: 1, g: 0, b: 0, a: 0}
     - _FEATHERS2COLOR1: {r: 0.6792453, g: 0, b: 0, a: 0}
-    - _HAIRCOLOR: {r: 0.3490566, g: 0.048518743, b: 0, a: 0}
+    - _HAIRCOLOR: {r: 0.047169805, g: 0.047169805, b: 0.047169805, a: 0}
     - _HAIRCOLOR1: {r: 1, g: 0, b: 0, a: 0}
-    - _LEATHER1COLOR: {r: 0.4811321, g: 0.2041155, b: 0.08851016, a: 1}
+    - _LEATHER1COLOR: {r: 0.4811321, g: 0.24748798, b: 0.15205589, a: 1}
     - _LEATHER1COLOR1: {r: 0.4811321, g: 0.2041155, b: 0.08851016, a: 1}
-    - _LEATHER2COLOR: {r: 0.4245283, g: 0.190437, b: 0.09011215, a: 1}
+    - _LEATHER2COLOR: {r: 0.3490566, g: 0.16505611, b: 0.08397116, a: 1}
     - _LEATHER2COLOR1: {r: 0.4245283, g: 0.190437, b: 0.09011215, a: 1}
-    - _LEATHER3COLOR: {r: 0.1698113, g: 0.04637412, b: 0.02963688, a: 1}
+    - _LEATHER3COLOR: {r: 0.18867922, g: 0.064918876, b: 0.0489498, a: 1}
     - _LEATHER3COLOR1: {r: 0.1698113, g: 0.04637412, b: 0.02963688, a: 1}
     - _LEATHER4COLOR: {r: 0.5754717, g: 0.34474012, b: 0.34474012, a: 0}
     - _LEATHER4COLOR1: {r: 0.1698113, g: 0.04637412, b: 0.02963688, a: 1}
-    - _LIPSCOLOR: {r: 0.7264151, g: 0.17374606, b: 0.13363299, a: 0}
+    - _LIPSCOLOR: {r: 0.4716981, g: 0.21143539, b: 0.19357423, a: 0}
     - _LIPSCOLOR1: {r: 0.8301887, g: 0.3185886, b: 0.2780349, a: 0}
     - _METAL1COLOR: {r: 0.8792791, g: 0.9922886, b: 1.007606, a: 0}
     - _METAL1COLOR1: {r: 0.8792791, g: 0.9922886, b: 1.007606, a: 0}
@@ -122,6 +122,6 @@ Material:
     - _OTHERCOLOR1: {r: 0.5188679, g: 0.4637216, b: 0.3206212, a: 0}
     - _SCLERACOLOR: {r: 0.9056604, g: 0.8159487, b: 0.8159487, a: 0}
     - _SCLERACOLOR1: {r: 0.9056604, g: 0.8159487, b: 0.8159487, a: 0}
-    - _SKINCOLOR: {r: 0.9622642, g: 0.6208123, b: 0.27687788, a: 0}
+    - _SKINCOLOR: {r: 0.8773585, g: 0.6814743, b: 0.40970984, a: 0}
     - _SKINCOLOR1: {r: 2.02193, g: 1.0081, b: 0.6199315, a: 0}
   m_BuildTextureStacks: []
