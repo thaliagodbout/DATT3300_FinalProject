@@ -9,6 +9,7 @@ TagManager:
   - Portal
   - PickUpItem
   - Benign
+  - LockedDoor
   layers:
   - Default
   - TransparentFX

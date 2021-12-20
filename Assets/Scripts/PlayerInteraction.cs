@@ -11,7 +11,8 @@ public class PlayerInteraction : MonoBehaviour
     private DialogueTrigger otherDialogueTrigger;
     private PuzzleDialogueTrigger puzzleDialogueTrigger;
 
-    // private static string inventoryItem;
+    // This class is messy...fix later
+    // if ur reading this i'm sorry
 
     void Start() {
 
@@ -30,7 +31,7 @@ public class PlayerInteraction : MonoBehaviour
             } else if (triggeringObj.tag == "PickUpItem") {
                 promptText.GetComponent<Animator>().SetBool("IsOpen", true);
 
-            } else {
+            } else if (triggeringObj.tag != "LockedDoor") {
                 promptText.GetComponent<Animator>().SetBool("IsOpen", true);
             }
 
@@ -82,6 +83,11 @@ public class PlayerInteraction : MonoBehaviour
             triggeringObj = other.gameObject;
             otherDialogueTrigger = triggeringObj.GetComponent("DialogueTrigger") as DialogueTrigger;
             triggering = true;
+            
+        } else if (other.tag == "LockedDoor") {
+            triggeringObj = other.gameObject;
+            otherDialogueTrigger = triggeringObj.GetComponent("DialogueTrigger") as DialogueTrigger;
+            triggering = true;
         }
     }
 
@@ -107,6 +113,11 @@ public class PlayerInteraction : MonoBehaviour
             otherDialogueTrigger.notInDialogue();
 
         } else if (other.tag == "Benign") {
+            triggering = false;
+            triggeringObj = null;
+            otherDialogueTrigger.notInDialogue();
+
+        } else if (other.tag == "LockedDoor") {
             triggering = false;
             triggeringObj = null;
             otherDialogueTrigger.notInDialogue();
