@@ -21,10 +21,6 @@ public class DialogueTrigger : MonoBehaviour
 
     public void notInDialogue() {
         inDialogue = false;
-        if (getKeyAfterDialogue) {
-            Debug.Log("Getting a key after dialogue");
-            ProgressManager.pickUp(key);
-        }
     }
 
     public bool isInDialogue() {

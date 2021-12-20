@@ -11,6 +11,10 @@ public class PlayerInteraction : MonoBehaviour
     private DialogueTrigger otherDialogueTrigger;
     private PuzzleDialogueTrigger puzzleDialogueTrigger;
 
+    // The NPC guide that starts and ends the game
+    public GameObject JoeStart;
+    public GameObject JoeEnd;
+
     // This class is messy...fix later
     // if ur reading this i'm sorry
 
@@ -136,6 +140,13 @@ public class PlayerInteraction : MonoBehaviour
 
             ProgressManager.removeItem(puzzleObject.requiredKey);
             puzzleObject.solve();
+
+            if (ProgressManager.numSolvedPuzzles == 4) {
+                if (JoeStart != null && JoeEnd != null) {
+                    JoeStart.SetActive(false);
+                    JoeEnd.SetActive(true);           
+                }
+            }
 
         } else if (puzzleObject.isSolved()) { // Already solved
             puzzleDialogueTrigger.TriggerSolvedDialogue();

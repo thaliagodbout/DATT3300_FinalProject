@@ -18,6 +18,8 @@ public class DialogueManager : MonoBehaviour
     public FirstPersonMovement playerMovementController;
     public PlayerInteraction playerInteraction;
 
+    public LevelLoader levelLoader;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -28,9 +30,7 @@ public class DialogueManager : MonoBehaviour
         scoreText.text = ProgressManager.numSolvedPuzzles.ToString() + "/" + ProgressManager.totalPuzzles.ToString();
     }
 
-    public void StartDialogue(Dialogue dialogue) {
-        Debug.Log("Starting conversation with " + dialogue.name);
-        
+    public void StartDialogue(Dialogue dialogue) {        
         dialogueBoxAnimator.SetBool("IsOpen", true);
         playerMovementController.disableControls();
 
@@ -69,12 +69,18 @@ public class DialogueManager : MonoBehaviour
     }
 
     void EndDialogue() {
-        Debug.Log("End of conversation.");
-
         // Handle post-dialogue actions depending on object
         if (playerInteraction.getTriggeringObj().tag == "NPC") {
             playerMovementController.enableControls();
             dialogueBoxAnimator.SetBool("IsOpen", false);
+
+            DialogueTrigger dialogueTrigger = playerInteraction.getTriggeringObj().GetComponent<DialogueTrigger>();
+            if (dialogueTrigger.getKeyAfterDialogue) {
+                Debug.Log("Getting a key after dialogue");
+                ProgressManager.pickUp(dialogueTrigger.key);
+                
+                levelLoader.CheckEndGame(); // Load end scene if picked last item
+            }
 
         } else if (playerInteraction.getTriggeringObj().tag == "Portal") {
             playerMovementController.enableControls();

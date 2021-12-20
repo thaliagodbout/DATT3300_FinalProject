@@ -11,6 +11,10 @@ public class LevelLoader : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+    }
+
+    public void CheckEndGame() {
         if (ProgressManager.endGame) {
             StartCoroutine(LoadLevel(2));
         }

@@ -57,12 +57,12 @@ public static class ProgressManager
         addToInventory(newItem);
         addToGrabbedThings(newItem);
 
-        // Debug.Log("Inventory: ");
-        // foreach (string item in inventoryItem) {
-        //     if (item != "") {
-        //         Debug.Log(item);
-        //     }
-        // }
+        Debug.Log("Inventory: ");
+        foreach (string item in inventoryItem) {
+            if (item != "") {
+                Debug.Log(item);
+            }
+        }
 
         if (newItem == "endgame") {
             endGame = true;
