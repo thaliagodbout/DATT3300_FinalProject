@@ -5,14 +5,15 @@ using UnityEngine;
 // Stores all progress variables
 public static class ProgressManager
 {
+    public static bool endGame = false;
     public static int numSolvedPuzzles = 0;
     public static int totalPuzzles = 4;
 
     // Rlly not the best way of doing this but change # array items depending on # puzzles
     // Time constraints - try to fix this later...if ur reading this im sorry
-    public static string[] inventoryItem = {"", "", "", "", "", "", ""};
-    public static string[] prevGrabbedThings = {"", "", "", "", "", "", ""}; // Track previously grabbed things
-    public static bool[] puzzleStatuses = {false, false, false, false};
+    public static string[] inventoryItem = {"", "", "", "", "", "", "", "", ""};
+    public static string[] prevGrabbedThings = {"", "", "", "", "", "", "", "", ""}; // Track previously grabbed things
+    public static bool[] puzzleStatuses = {false, false, false, false, false};
 
     public static Vector3 overworldSpawnPoint = new Vector3(354, 7, 191);
     public static bool isSpawnInOverworld = false;
@@ -56,11 +57,15 @@ public static class ProgressManager
         addToInventory(newItem);
         addToGrabbedThings(newItem);
 
-        Debug.Log("Inventory: ");
-        foreach (string item in inventoryItem) {
-            if (item != "") {
-                Debug.Log(item);
-            }
+        // Debug.Log("Inventory: ");
+        // foreach (string item in inventoryItem) {
+        //     if (item != "") {
+        //         Debug.Log(item);
+        //     }
+        // }
+
+        if (newItem == "endgame") {
+            endGame = true;
         }
 
         if (newItem == "wood1" || newItem == "wood2" || newItem == "wood3") { // Also a bad way of doing this...fix later
