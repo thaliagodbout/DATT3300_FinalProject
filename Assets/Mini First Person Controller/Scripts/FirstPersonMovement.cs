@@ -53,12 +53,20 @@ public class FirstPersonMovement : MonoBehaviour
 
     public void enableControls() {
         playerControlsEnabled = true;
+
+        Jump jumpScript = GetComponent<Jump>();
+        jumpScript.enableControls();
+
         rigidbody.useGravity = true;
 
     }
  
     public void disableControls() {
         playerControlsEnabled = false;
+
+        Jump jumpScript = GetComponent<Jump>();
+        jumpScript.disableControls();
+        
         rigidbody.velocity = new Vector3(0, 0, 0);
         rigidbody.useGravity = false;
     }

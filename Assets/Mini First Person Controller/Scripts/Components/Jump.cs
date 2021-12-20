@@ -9,6 +9,7 @@ public class Jump : MonoBehaviour
     [SerializeField, Tooltip("Prevents jumping when the transform is in mid-air.")]
     GroundCheck groundCheck;
 
+    private bool playerControlsEnabled = true;
 
     void Reset()
     {
@@ -27,8 +28,18 @@ public class Jump : MonoBehaviour
         // Jump when the Jump button is pressed and we are on the ground.
         if (Input.GetButtonDown("Jump") && (!groundCheck || groundCheck.isGrounded))
         {
-            rigidbody.AddForce(Vector3.up * 100 * jumpStrength);
-            Jumped?.Invoke();
+            if (playerControlsEnabled) {
+                rigidbody.AddForce(Vector3.up * 100 * jumpStrength);
+                Jumped?.Invoke();
+            }
         }
+    }
+
+    public void disableControls() {
+        playerControlsEnabled = false;
+    }
+
+    public void enableControls() {
+        playerControlsEnabled = true;
     }
 }

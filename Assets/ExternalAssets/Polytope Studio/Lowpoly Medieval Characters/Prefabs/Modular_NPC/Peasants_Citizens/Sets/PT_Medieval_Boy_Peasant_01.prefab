@@ -1527,6 +1527,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9180051060456103760}
   - component: {fileID: 9180051060465201328}
+  - component: {fileID: 3567439997921601248}
   m_Layer: 0
   m_Name: PT_Medieval_Boy_Peasant_01
   m_TagString: Untagged
@@ -1571,6 +1572,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!65 &3567439997921601248
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9180051060455670640}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.3835975, y: 1.5188279, z: 0.34732282}
+  m_Center: {x: 0.004004823, y: 0.6342937, z: 0.00006818151}
 --- !u!1 &9180051060455670642
 GameObject:
   m_ObjectHideFlags: 0
