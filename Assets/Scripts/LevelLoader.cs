@@ -11,7 +11,13 @@ public class LevelLoader : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (Input.GetKeyDown("escape")) {
+            Application.Quit(); // Quits the game
+        }
+    }
 
+    public void LoadStartGame() {
+        StartCoroutine(LoadLevel(0));
     }
 
     public void CheckEndGame() {
